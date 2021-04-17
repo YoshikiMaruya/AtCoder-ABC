@@ -8,7 +8,5 @@ template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return 1; }
 #define MOD 998244353
 
 int main() {
-  int x,y;
-  cin>>x>>y;
-
+  
 }
