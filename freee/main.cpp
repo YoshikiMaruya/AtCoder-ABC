@@ -15,6 +15,8 @@ int main(){
   int a_weight[12]={3,5,2,3,4,3,4,2,2,3,6,2};
   int b_weight[5]={4,3,3,2,3};
 
+  int hours=5;
+
   if(s=="A2"){
     if(dir=="U"){
       for(int i=55;i<=60;i+=5){
