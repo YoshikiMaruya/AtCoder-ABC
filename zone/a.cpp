@@ -8,25 +8,21 @@ template<class T> inline bool chmin(T& a, T b) { if (a > b) { a = b; return 1; }
 #define MOD 998244353
 
 int main(){
-  string r,s,dir,hh;
-
-  cin>>r>>s>>dir>>hh;
-
-  int a_weight[12]={3,5,2,3,4,3,4,2,2,3,6,2};
-  int b_weight[5]={4,3,3,2,3};
-
-  int hours=5;
-
-  if(s=="A2"){
-    if(dir=="U"){
-      for(int i=55;i<=60;i+=5){
-        cout<<i<<" ";
+  string s;
+  int count=0;
+  cin>>s;
+  rep(i,s.size()){
+    if(s[i]=='Z'){
+      if(s[i+1]=='O'){
+        if(s[i+2]=='N'){
+          if(s[i+3]=='e'){
+            count++;
+            continue;
+          }
+        }
       }
     }
   }
-
-  cout<<endl;
+  cout<<count<<endl;
   return 0;
 }
-
-&& a[j-1].first != a[j].first && a[j-1].second != a[j].second
