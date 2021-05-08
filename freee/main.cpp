@@ -24,9 +24,5 @@ int main(){
       }
     }
   }
-
-  cout<<endl;
   return 0;
 }
-
-&& a[j-1].first != a[j].first && a[j-1].second != a[j].second
