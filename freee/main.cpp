@@ -24,14 +24,14 @@ int main(){
       for(int j=0;j<13;j++){
         string num(to_string(j+1));
         sum_weight+=a_weight[j];
-        if(j<8 && s==r+num){
+        if(j<7 && s==r+num){
           for(int i=55;i<115;i+=5){
             solve[k]=(i+sum_weight)%60;
             k++;
           }
         }
-        if(j>=8 && s==r+num){
-          for(int i=55;i<115;i+=5){
+        if(j>=7 && s==r+num){
+          for(int i=55;i<115;i+=10){
             solve[k]=(i+sum_weight)%60;
             k++;
           }
@@ -72,7 +72,7 @@ int main(){
           printf("%02d", solve[i]);
           break;
         }
-        printf("02d", solve[i]);
+        printf("%02d", solve[i]);
         cout<<" ";
         continue;
       }
